@@ -9,7 +9,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 function App() {
@@ -19,6 +18,7 @@ function App() {
         <Route exact path="/" component={Home}/>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/register" component={Register}/>
+        <Route exact path="/register/success" component={Register}/>
         <Protected path="/app/user" exact component={User}/>
    
       </Switch>

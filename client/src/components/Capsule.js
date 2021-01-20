@@ -21,7 +21,7 @@ export default function(props){
     }, [])
 
     return(
-        <div>
+        <div class="container">
             <h1>Viewing Capsule Information {capsule.id}</h1>
         </div>
     )

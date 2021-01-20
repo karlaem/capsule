@@ -8,7 +8,7 @@ export default function(){
 
     return(
 
-        <div>
+        <div class="container">
             <h1 style={headerStyle}>Home</h1>
         </div>
     )

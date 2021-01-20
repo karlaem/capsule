@@ -29,7 +29,7 @@ function Nearby(props){
         }
     }
 
-    return(<div>
+    return(<div class="container">
         <Navigation />
         <h1>Nearby</h1>
 

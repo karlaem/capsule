@@ -33,7 +33,7 @@ function NewCapsule(props){
 
     //setCapsuleName (receive some value inside me) 
     return(
-        <div>
+        <div class="container">
             <Navigation />
             <h1>Create A New Capsule</h1>
             <div id="newCapsuleForm">

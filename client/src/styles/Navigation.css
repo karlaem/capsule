@@ -1,0 +1,13 @@
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    background-color: blue;
+    border: blue 1px solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+}

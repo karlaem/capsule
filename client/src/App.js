@@ -4,6 +4,9 @@ import NewCapsule from "./components/NewCapsule.js";
 import Nearby from "./components/Nearby.js";
 import Capsule from "./components/Capsule.js";
 
+// import styles
+import './styles/index.css';
+import './styles/NewCapsule.css';
 
 import {
   BrowserRouter as Router,

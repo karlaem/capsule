@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { geolocated } from "react-geolocated";
 import API from '../libs/API'
 import Navigation from '../components/Navigation.js'
+import "../styles/NewCapsule.css";
 
 import {
     useHistory

@@ -6,6 +6,7 @@ import Capsule from "./components/Capsule.js";
 
 // import styles
 import './styles/index.css';
+import './styles/Navigation.css';
 import './styles/NewCapsule.css';
 
 import {

@@ -1,4 +1,6 @@
 import React from 'react'; 
+import { Link } from "react-router-dom";
+import "../styles/Home.css";
 
 //functional components 
 export default function(){
@@ -8,8 +10,16 @@ export default function(){
 
     return(
 
-        <div class="container">
-            <h1 style={headerStyle}>Home</h1>
+        <div class="container home">
+            <div class="contents">
+                <div class="logo">
+                    <h1>Capsule</h1>
+                </div>
+                <div class="menu">
+                    <Link to="/nearby">find capsule</Link> 
+                    <Link to="/capsule/new">create capsule</Link> 
+                </div>
+            </div>
         </div>
     )
 }

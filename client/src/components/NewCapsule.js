@@ -34,15 +34,19 @@ function NewCapsule(props){
 
     //setCapsuleName (receive some value inside me) 
     return(
-        <div class="container">
+        <div class="new">
             <Navigation />
-            <h1>Create A New Capsule</h1>
-            <div id="newCapsuleForm">
-                <label>Name</label>
-                <input type="text" name="name" id="capsuleNameField" value={capsuleName} onChange={e=>updateCapsuleName(e)}/> 
+            <div class="logo">
+                <h1>Capsule</h1>
             </div>
-
-            <input type="submit" value="Save" onClick={e=>submitForm()}/>
+            <div class="container">
+            <h2>Create A New Capsule</h2>
+            <div id="newCapsuleForm">
+                <label>Title:</label>
+                <input type="text" name="name" id="capsuleNameField" value={capsuleName} onChange={e=>updateCapsuleName(e)}/> 
+                <input class="ctaBtn" type="submit" value="Save" onClick={e=>submitForm()}/>
+            </div>
+            </div>
         </div>
     )
 }

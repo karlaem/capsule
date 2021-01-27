@@ -1,5 +1,6 @@
 //endpoint: /something/
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function({endpoint, method, payload, callbackFn}){
 
      //create object
@@ -12,13 +13,12 @@ export default function({endpoint, method, payload, callbackFn}){
     // what ever comes back from API ends up down here 
     fetch('http://localhost:3000/api'+endpoint, requestOptions)
         .then(response => {
-            if(response.status == 200)
+            if(response.status === 200)
             {
                 response.text().then(data=>{
-                    callbackFn(JSON.parse(data)); 
+                    callbackFn(JSON.parse(data));
                 })
             } else {
-                
                 console.log("error on API", response);
             }
         });

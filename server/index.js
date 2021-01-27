@@ -19,10 +19,10 @@ var port = process.env.PORT || 3000;        // set our port
 var router = express.Router();              // get an instance of the express Router
 
 var connection = mysql.createConnection({
-  port: 8889,
+  port: 3306,
   host: 'localhost',
   user: 'root',
-  password: 'root',
+  password: '',
   database: 'capsule',
 });
 
@@ -61,9 +61,11 @@ router.post("/nearby/", function(req, res){
   let lon = req.body.lon;
   let lat = req.body.lat;
 
+
   connection.query('SELECT id, strName, ( 3959 * acos( cos( radians('+lat+') ) * cos( radians( intLat ) ) * cos( radians( intLon ) - radians('+lon+') ) + sin( radians('+lat+') ) * sin(radians(intLat)) ) ) AS distance FROM capsules HAVING distance < 50 ORDER BY distance', function (error, results, fields) {
 
-    console.log(results);
+   
+
     res.send(JSON.stringify(results))
   });
 
